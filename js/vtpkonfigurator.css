@@ -1,0 +1,67 @@
+.vtpkonfigurator_canvas > * {
+	display: inline-block;
+	vertical-align: top;
+}
+.vtpkonfigurator_zoom {
+	width: 33px;
+	height: 33px;
+	background-image: url(zoom.png);
+	background-position: 9px 9px;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	border: 1px solid #cccccc;
+}
+
+.vtpkonfigurator_zoom.active {
+	background-image: url(./zoom-active.png);
+	border: 1px solid #aa0000;
+}
+
+.vtpkonfigurator_zoom_canvas {
+	position: absolute;
+	z-index: 10000;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #ffffff;
+	border: 0;
+	overflow: hidden;
+}
+
+.vtpkonfigurator_zoom_canvas img {
+	position: relative;
+	cursor: move;
+}
+
+.vtpkonfigurator_zoom_loading {
+	width: 100px;
+	height: 25px;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	margin-left: -50px;
+	margin-top: -12px;
+}
+#vtpkonfigurator_authorlink {
+	visibility: hidden;
+	text-align: center !important;
+	padding-top: 10px;
+}
+#vtpkonfigurator_authorlink a {
+	position: relative;
+	margin-top: 10px;
+	z-index: 99;
+}
+.vtpkonfigurator img {
+	border: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.vtpkonfigurator_zoom_closebutton {
+	width: 35px;
+	height: 36px;
+	background-image: url(button-close.png);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
