@@ -4,7 +4,7 @@ Donate link: http://3d-viewer-freeware.eu/freeware/plugin-fuer-wordpress.html
 Tags: 3d, viewer, configurator, eshop, products, 360
 Requires at least: 1.0
 Tested up to: 3.4.1
-Stable tag: 1.5.1
+Stable tag: 1.5.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,7 +35,7 @@ Option 2:
 Create a new configuration in the backend by specifying a name in the first step.
 
 The next step is to upload the images, grouped by their area 
-(360° view small / zoom / 1 thumbnail). The images can be uploaded single,
+(360&deg; view small / zoom / 1 thumbnail). The images can be uploaded single,
 or in groups (select multiple images at once in the select dialog window),
 or as a zip file of pictures (the folder structure doesn't matter then).
 
@@ -45,15 +45,17 @@ server-side parameters described in section "conditions".
 
 == Screenshots ==
 
-Screenshots are available on: http://3d-viewer-freeware.eu/installation/fuer-wordpress.html
-
 1. Object unfolded
 2. Object collapsed
 3. Object unfolded from other perspective
 4. Overview of differen configurator elements
 5. Management of small pictures, zoom pictures, thumbnail used for selection
+6. More screenshots are available on: http://3d-viewer-freeware.eu/installation/fuer-wordpress.html
 
 == Changelog ==
+
+= 1.5.2 =
+Minor readme modifications
 
 = 1.5.1 =
 Updated readme, names, added link to example 3D data, added screenshots
@@ -98,16 +100,16 @@ technician.
 
 - Parameter "post_max_size":
    Sets the maximum allowed file size for file uploads through forms using POST
-   (The smaller value of post_max_size / upload_max_filesize is taken)
+  (The smaller value of post_max_size / upload_max_filesize is taken)
 
 - Parameter "upload_max_filesize": 
    States generally allow the maximum file size for uploads
-   (The smaller value of post_max_size / upload_max_filesize is taken)
+  (The smaller value of post_max_size / upload_max_filesize is taken)
 
 - Parameters "max_file_uploads":
    Determines the maximum number of individual files that can be uploaded
    within a file upload operation
-  
+
 - Parameters "max_execution_time":
    Timeout in seconds which a script is allowed to spend for the processing of 
    data uploaded via POST / GET. If this limit is exceeded, the execution of
@@ -125,7 +127,7 @@ technician.
 
 - Using "Option 2" allows to upload multiple images or a zip file full of pictures.
   If a Zip file is selected, all images will be added to the current range
-  (360° / zoom, respectively), regardless of the folder structure inside the zip file.
+  (360&deg; / zoom, respectively), regardless of the folder structure inside the zip file.
   If there are multiple images with identical filenames in different folders in the zip file,
   the last file overwrites previously processed files of the same name (alphabetical order and
   recursively).

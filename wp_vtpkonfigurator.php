@@ -277,7 +277,7 @@ if (!class_exists('wp_vtpkonfigurator'))
     {
       //add_options_page('WP-VTP Viewer', 'WP-VTP Viewer', 10, basename(__FILE__), array(&$this, 'admin_options_page'));
       //add_filter('plugin_action_links_'.plugin_basename(__FILE__), array(&$this, 'filter_plugin_actions'), 10, 2);
-      add_menu_page('WP-VTP Konfigurator', 'WP-VTP Konfigurator', 10, basename(__FILE__), array(&$this, 'admin_page')); 
+      add_menu_page('3D Viewer Configurator', '3D Viewer Configurator', 10, basename(__FILE__), array(&$this, 'admin_page')); 
       add_filter('contextual_help', array(&$this, 'admin_help'), 10, 3);
     }
         

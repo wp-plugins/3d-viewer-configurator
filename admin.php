@@ -1,6 +1,6 @@
 <div class="wrap">
 <div id="icon-plugins" class="icon32"></div>
-<h2>WP-VTP Konfigurator</h2>
+<h2>3D Viewer Configurator</h2>
 <br />
 <?php
 if (($_GET['action'] == 'edit')||($_GET['action'] == 'create'))
