@@ -2,14 +2,15 @@
 
 <!-- Free version -->
 <p>Here you can find examples of how the 3D configurator can be used:<br/>
-<a href="http://www.3d-moebel-konfigurator.de/die-loesung">3D Configuration Examples</a></p>
+<a href="http://produktbilder-fuer-onlineshops.de">3D Configuration Examples</a></p>
 
 <p>Find out how affordable is our visualization and photography service:<br/>
-<a href="http://www.3d-moebel-konfigurator.de/so-gehts/anfrageformular">Prices for 3D visualization and photography</a></p>
+<a href="http://produktbilder-fuer-onlineshops.de/preise/">Prices for 3D visualization and photography</a></p>
 
-<p>Here you can buy the PRO version of the visualtektur-Logo to remove:<br/>
-<a href="http://www.3d-eshop.eu">3D Viewer PRO</a><br/>
-<a href="http://www.3d-eshop.eu">3D configurator PRO</a></p>
+<p>Here you can buy the PRO version and remove the visualtektur author logo:<br/>
+<a href="http://3d-viewer-freeware.eu/freeware/plugin-fuer-wordpress.html">3D Viewer Configurator PRO</a><br/>
+
+<p>Please <a href="http://3d-viewer-freeware.eu/anwendungen-3d-viewer/download-beispieldaten.html">click here to download 3D example data!</a></p>
 
 <p>With a small donation you can help us further develop the 3D configurator:<br/>
 

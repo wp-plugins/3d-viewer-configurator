@@ -4,7 +4,7 @@ Donate link: http://3d-viewer-freeware.eu/freeware/plugin-fuer-wordpress.html
 Tags: 3d, viewer, configurator, eshop, products, 360
 Requires at least: 1.0
 Tested up to: 3.4.1
-Stable tag: 1.5
+Stable tag: 1.5.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,6 +48,9 @@ server-side parameters described in section "conditions".
 Screenshots are available on: http://3d-viewer-freeware.eu/installation/fuer-wordpress.html
 
 == Changelog ==
+
+= 1.5.1 =
+Updated readme, names, added link to example 3D data, added screenshots
 
 = 1.5 =
 The zoom image now opens full screen
@@ -125,25 +128,25 @@ technician.
 
 <code>
 item1/ - Configuration 1, any name (only letters, numbers and "-", "_" allowed)
-             thumb.png - small preview
-                  view/ - images for the animation numbered, with optional prefix
-                     1.jpg
-                     2.jpg
-                     3.jpg
-                     ...
-                     n.jpg
-                  zoom/
-                     1.jpg - Zoom images in high resolution, matching the small screen
-                     2.jpg
-                     3.jpg
-                     ...
-                     n.jpg
+             thumb.png - small preview
+                  view/ - images for the animation numbered, with optional prefix
+                     1.jpg
+                     2.jpg
+                     3.jpg
+                     ...
+                     n.jpg
+                  zoom/
+                     1.jpg - Zoom images in high resolution, matching the small screen
+                     2.jpg
+                     3.jpg
+                     ...
+                     n.jpg
            
 item2/ - Configuration 2
-        ...
+        ...
 item3/
-		...
+        ...
 ...
 /itemn
-		...
+        ...
 </code>

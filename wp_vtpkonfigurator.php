@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: WP-VTP Konfigurator
+Plugin Name: 3D Viewer Configurator
 Plugin URI: http://www.3d-eshop.eu/
-Description: Wordpress VTP Konfigurator Plugin
+Description: Wordpress 3D Viewer Configurator
 Author: visualtektur and ProNego
-Version: 1.5
+Version: 1.5.1
 Author URI: http://www.visualtektur.net/
 */
 
