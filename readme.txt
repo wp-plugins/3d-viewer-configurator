@@ -47,6 +47,12 @@ server-side parameters described in section "conditions".
 
 Screenshots are available on: http://3d-viewer-freeware.eu/installation/fuer-wordpress.html
 
+1. Object unfolded
+2. Object collapsed
+3. Object unfolded from other perspective
+4. Overview of differen configurator elements
+5. Management of small pictures, zoom pictures, thumbnail used for selection
+
 == Changelog ==
 
 = 1.5.1 =
@@ -90,20 +96,20 @@ in the appropriate PHP configuration file (usually a file named php.ini)
 may need to be adjusted. Please contact your provider or the appropriate 
 technician.
 
-- Parameter "post_max_size"
-   Sets the maximum allowed file size for file uploads through forms using POST
+- Parameter "post_max_size":
+   Sets the maximum allowed file size for file uploads through forms using POST
    (The smaller value of post_max_size / upload_max_filesize is taken)
 
-- Parameter "upload_max_filesize"
-   States generally allow the maximum file size for uploads
+- Parameter "upload_max_filesize": 
+   States generally allow the maximum file size for uploads
    (The smaller value of post_max_size / upload_max_filesize is taken)
 
-- Parameters "max_file_uploads"
-   Determines the maximum number of individual files that can be uploaded
+- Parameters "max_file_uploads":
+   Determines the maximum number of individual files that can be uploaded
    within a file upload operation
   
-- Parameters "max_execution_time"
-   Timeout in seconds which a script is allowed to spend for the processing of 
+- Parameters "max_execution_time":
+   Timeout in seconds which a script is allowed to spend for the processing of 
    data uploaded via POST / GET. If this limit is exceeded, the execution of
    the script will be canceled. After uploading the files in the archive 
    unpacked and moved to the right place. If this value is set too low, 
@@ -113,16 +119,16 @@ technician.
 == Additional Comments ==
 
 - By using "Option 1", all top-level directories are interpreted as
-   configurations. The only exception is the directory "__MACOSX"
-   which is typically created automatically by Apple computers.
-   Furthermore, all files starting with a dot (.), eg .DS_Store, will be ignored.
+   configurations. The only exception is the directory "__MACOSX"
+   which is typically created automatically by Apple computers.
+   Furthermore, all files starting with a dot (.), eg .DS_Store, will be ignored.
 
 - Using "Option 2" allows to upload multiple images or a zip file full of pictures.
-   If a Zip file is selected, all images will be added to the current range
-   (360 ° / zoom, respectively), regardless of the folder structure inside the zip file.
-   If there are multiple images with identical filenames in different folders in the zip file,
-   the last file overwrites previously processed files of the same name (alphabetical order and
-   recursively).
+  If a Zip file is selected, all images will be added to the current range
+  (360° / zoom, respectively), regardless of the folder structure inside the zip file.
+  If there are multiple images with identical filenames in different folders in the zip file,
+  the last file overwrites previously processed files of the same name (alphabetical order and
+  recursively).
 
 = Description of the data =
 
@@ -141,7 +147,7 @@ item1/ - Configuration 1, any name (only letters, numbers and "-", "_" allowed)
                      3.jpg
                      ...
                      n.jpg
-           
+
 item2/ - Configuration 2
         ...
 item3/
