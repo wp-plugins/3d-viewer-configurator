@@ -4,7 +4,7 @@ Plugin Name: 3D Viewer Configurator
 Plugin URI: http://www.3d-eshop.eu/
 Description: Wordpress 3D Viewer Configurator
 Author: visualtektur and ProNego
-Version: 1.5.1
+Version: 1.5.2
 Author URI: http://www.visualtektur.net/
 */
 
