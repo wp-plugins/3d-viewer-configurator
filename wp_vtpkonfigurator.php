@@ -4,7 +4,7 @@ Plugin Name: 3D Viewer Configurator
 Plugin URI: http://www.3d-eshop.eu/
 Description: Wordpress 3D Viewer Configurator
 Author: visualtektur and ProNego
-Version: 1.5.2
+Version: 1.6
 Author URI: http://www.visualtektur.net/
 */
 
@@ -88,9 +88,10 @@ if (!class_exists('wp_vtpkonfigurator'))
       }
        
     
-      // install and uninstall hook
+      // install hook
       register_activation_hook(__FILE__, array(&$this, "install"));
-      register_uninstall_hook(__FILE__, array(&$this, "uninstall"));            
+      
+      // Uninstallation is done using suggested uninstall.php
     }
 
     // install
@@ -106,14 +107,10 @@ if (!class_exists('wp_vtpkonfigurator'))
             ";       
       require_once(ABSPATH.'wp-admin/includes/upgrade.php');
       dbDelta($sql);
-    }
-
-    // uninstall from DB
-    function uninstall()
-    {
-      $sql = "DROP TABLE IF EXISTS " . $this->tablename;
-      require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
-      dbDelta($sql);
+      
+      // Move back backup data
+      if (file_exists(WP_PLUGIN_DIR.'/3d_viewer_configurator-databackup'))
+      	rename(WP_PLUGIN_DIR.'/3d_viewer_configurator-databackup',WP_PLUGIN_DIR.'/'.dirname(plugin_basename(__FILE__)).'/data/');
     }
     
 
