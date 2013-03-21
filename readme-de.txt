@@ -1,8 +1,8 @@
 Kurzübersicht
 -------------
 
-Das vtpkonfigurator Wordpress-Plugin ermöglicht die 3D-Anzeige von Produktkonfigurationen
-im Frontend. Gleichzeitig bietet es im Backend die Möglichkeit, die Konfigurationen
+Der 3D Proudkt Viewer für Wordpress ermöglicht die 3D-Anzeige von Produktkonfigurationen
+im Frontend. Gleichzeitig bietet er im Backend die Möglichkeit, die Konfigurationen
 anzulegen und die entsprechenden Bilder hochzuladen.
 
 Für den Upload der Bilder (Wichtig: zuerst eine Konfiguration anlegen!) gibt es mehrere 

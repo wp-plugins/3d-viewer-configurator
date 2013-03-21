@@ -1,21 +1,21 @@
-=== 3D Viewer Configurator ===
+=== 3D Produkt Viewer ===
 Contributors: visualtektur, ProNego
 Donate link: http://3d-viewer-freeware.eu/freeware/plugin-fuer-wordpress.html
 Tags: 3d, viewer, configurator, eshop, products, 360
 Requires at least: 1.0
 Tested up to: 3.4.1
-Stable tag: 1.6
+Stable tag: 1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-The 3D Viewer Configurator provides an interactive 3D display of products and objects on a website. It works in all today's major browsers.
+The 3D Produkt Viewer provides an interactive 3D display of products and objects on a website. It works in all today's major browsers.
 
 
 == Description ==
 
-The 3D Viewer Configurator provides an interactive 3D display of products and objects directly in the browser. The configurator visually helps to mature purchasing decisions from the first moment because many customers get their questions already answered about a product by seeing it interactively.
+The 3D Produkt Viewer provides an interactive 3D display of products and objects directly in the browser. The configurator visually helps to mature purchasing decisions from the first moment because many customers get their questions already answered about a product by seeing it interactively.
 
-The 3D Viewer Konfigurator is a new and unique presentation technology for all products. On the very first visit of your website or eShop, the user gets an intense Aha experience which strongly, positively distinguishes your website from your competitors.
+The 3D Produkt Viewer is a new and unique presentation technology for all products. On the very first visit of your website or eShop, the user gets an intense Aha experience which strongly, positively distinguishes your website from your competitors.
 
 Dealers and salespeople get the 3D Viewer Konfigurator is an effective marketing tool and advice on hand. It is accessible over the Internet and operable by its cross-system functionality with all major end devices.
 
@@ -54,21 +54,32 @@ server-side parameters described in section "conditions".
 
 == Changelog ==
 
+= 1.7 =
+- Bugfix in zoom mode.
+- Changed name to 3D Proukt Viewer.
+- New license system, Paypal integration.
+- Added language file for DE.
+
+Important: PRO version state is kept for future releases!
+Existing owners of a PRO version please contact
+<a href="mailto:info@visualtektur.de">info@visualtektur.de</a>
+to get a serial number.
+
 = 1.6 =
 Configuration data is now kept during update procedure 
-(does not work for releases < 1.6, please backup manually)
+(does not work for releases < 1.6, please backup manually).
 
 = 1.5.2 =
-Minor readme modifications
+Minor readme modifications.
 
 = 1.5.1 =
-Updated readme, names, added link to example 3D data, added screenshots
+Updated readme, names, added link to example 3D data, added screenshots.
 
 = 1.5 =
-The zoom image now opens full screen
+The zoom image now opens full screen.
 
 = 1.4 =
-Now suitable for Wordpress 3.4
+Now suitable for Wordpress 3.4.
 
 = 1.3 =
 Now with SuperZOOM

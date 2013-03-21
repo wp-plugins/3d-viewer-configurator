@@ -1,47 +1,26 @@
-
-
-<!-- Free version -->
-<p>Here you can find examples of how the 3D configurator can be used:<br/>
-<a href="http://produktbilder-fuer-onlineshops.de">3D Configuration Examples</a></p>
-
-<p>Find out how affordable is our visualization and photography service:<br/>
-<a href="http://produktbilder-fuer-onlineshops.de/preise/">Prices for 3D visualization and photography</a></p>
-
-<p>Here you can buy the PRO version and remove the visualtektur author logo:<br/>
-<a href="http://3d-viewer-freeware.eu/freeware/plugin-fuer-wordpress.html">3D Viewer Configurator PRO</a><br/>
-
-<p>Please <a href="http://3d-viewer-freeware.eu/anwendungen-3d-viewer/download-beispieldaten.html">click here to download 3D example data!</a></p>
-
-<p>With a small donation you can help us further develop the 3D configurator:<br/>
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="SW8D4VEGBG34N">
-<input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">
-<img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
-</form>
-</p>
-
+<?php 
+include('admin_buy.php');
+?>
 
 <p>
-  <a class="button-secondary" href="<?php echo $main_link; ?>&action=create" title="<?php _e('Create konfigurator'); ?>"><?php _e('Create konfigurator'); ?></a>
+	<a class="button-secondary" href="<?php echo $main_link; ?>&action=create" title="<?php _e('Create new configurator', $this->localizationDomain); ?>"><?php _e('Create new configurator', $this->localizationDomain); ?></a>
 </p>
 
 <table class="widefat">
 <thead>
     <tr>
         <th>ID</th>
-        <th><?php _e('Name'); ?></th>
-        <th><?php _e('Code'); ?></th>
-        <th><?php _e('Actions'); ?></th>
+        <th><?php _e('Name', $this->localizationDomain); ?></th>
+        <th><?php _e('Code', $this->localizationDomain); ?></th>
+        <th><?php _e('Actions', $this->localizationDomain); ?></th>
     </tr>
 </thead>
 <tfoot>
     <tr>
         <th>ID</th>
-        <th><?php _e('Name'); ?></th>
-        <th><?php _e('Code'); ?></th>
-        <th><?php _e('Action'); ?></th>
+        <th><?php _e('Name', $this->localizationDomain); ?></th>
+        <th><?php _e('Code', $this->localizationDomain); ?></th>
+        <th><?php _e('Actions', $this->localizationDomain); ?></th>
     </tr>
 </tfoot>
 <tbody>
@@ -55,8 +34,8 @@
      <td><?php echo $item['v_id']; ?></td>
      <td><?php echo $item['v_name']; ?></td>
      <td>[wp_vtpkonfigurator id="<?php echo $item['v_id']; ?>"]</td>
-     <td><a href="<?php echo $main_link; ?>&action=edit&vid=<?php echo $item['v_id']; ?>">Edit</a> | 
-     <span class="delete"><a href="<?php echo $main_link; ?>&action=delete&vid=<?php echo $item['v_id']; ?>" onclick="return window.confirm('Are you sure?');">Delete</a></span></td>
+     <td><a href="<?php echo $main_link; ?>&action=edit&vid=<?php echo $item['v_id']; ?>"><?php _e('Edit', $this->localizationDomain); ?></a> | 
+     <span class="delete"><a href="<?php echo $main_link; ?>&action=delete&vid=<?php echo $item['v_id']; ?>" onclick="return window.confirm('<?php _e('Are you sure?', $this->localizationDomain); ?>');"><?php _e('Delete', $this->localizationDomain); ?></a></span></td>
    </tr>
   <?php
   }
