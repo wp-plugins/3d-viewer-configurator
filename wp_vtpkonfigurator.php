@@ -4,7 +4,7 @@ Plugin Name: 3D Produkt Viewer
 Plugin URI: http://3d-produkt-viewer.eu/software/
 Description: Wordpress 3D Produkt Viewer
 Author: Visualtektur and ProNego
-Version: 1.7.1
+Version: 1.7.2
 Author URI: http://www.visualtektur.net/
 */
 

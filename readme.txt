@@ -54,6 +54,21 @@ server-side parameters described in section "conditions".
 
 == Changelog ==
 
+= 1.7.2 =
+Updated readme, see below.
+
+<b style="color: red;">Important Note for the people
+having a previous version installed:</b>
+Please manually backup the folder <code>"data"</code> located in 
+<code>".../wp-content/plugins/3d-viewer-configurator/"</code>
+before auto-upgrading.
+After the upgrade, restore the contents of <code>"data"</code>
+back to the original position.
+
+Starting from release 1.7.2, this manual backup
+is no longer necessary during auto-upgrade.
+
+
 = 1.7.1 =
 Important bugfix release:
 - Fixed automatic deletion of configuration data when using Wordpress' plugin auto-upgrade function.
