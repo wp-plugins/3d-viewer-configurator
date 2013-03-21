@@ -4,7 +4,7 @@ Plugin Name: 3D Produkt Viewer
 Plugin URI: http://3d-produkt-viewer.eu/software/
 Description: Wordpress 3D Produkt Viewer
 Author: Visualtektur and ProNego
-Version: 1.7
+Version: 1.7.1
 Author URI: http://www.visualtektur.net/
 */
 
@@ -127,8 +127,11 @@ if (!class_exists('wp_vtpkonfigurator'))
 
 			// install hook
 			register_activation_hook(__FILE__, array(&$this, "install"));
-
 			// Uninstallation is done using suggested uninstall.php
+			
+			// for auto update
+			add_filter('upgrader_pre_install', array(&$this, "create_backup"), 10, 2);
+			add_filter('upgrader_post_install', array(&$this, "restore_backup"), 10, 2);
 		}
 
 		/**
@@ -148,13 +151,37 @@ if (!class_exists('wp_vtpkonfigurator'))
 			require_once(ABSPATH.'wp-admin/includes/upgrade.php');
 			dbDelta($sql);
 
+			// restore backup
+			$this->restore_backup();
+		}
+		
+		/**
+		 * Create a backup of the configuration data and license key file.
+		 */
+		function create_backup()
+		{
+			$working_dir = WP_PLUGIN_DIR.'/'.dirname(plugin_basename(__FILE__)); 
+			
+			// Backup potential configurations
+			rename($working_dir.'/data/', WP_PLUGIN_DIR.'/3d_viewer_configurator-databackup');
+			
+			// Backup reg file
+			if (file_exists($working_dir.'/regkey.txt'))
+				copy($working_dir.'/regkey.txt', WP_PLUGIN_DIR.'/3d_viewer_configurator-databackup/regkey.txt');
+		}
+		
+		/**
+		 * Restore a backup if it exists.
+		 */
+		function restore_backup()
+		{
 			// Move back backup data (moved during uninstall)
 			$backup_dir = WP_PLUGIN_DIR.'/3d_viewer_configurator-databackup';
 			if (file_exists($backup_dir)) {
 				// 1. try to restore regkey file if exists
 				if (file_exists($backup_dir.'/'.$this->licensekeyfile))
 					rename($backup_dir.'/'.$this->licensekeyfile, WP_PLUGIN_DIR.'/'.dirname(plugin_basename(__FILE__)).'/'.$this->licensekeyfile);
-				
+			
 				// 2. move configurations (dir itself)
 				rename($backup_dir, WP_PLUGIN_DIR.'/'.dirname(plugin_basename(__FILE__)).'/data/');
 			}

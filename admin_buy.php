@@ -97,7 +97,7 @@ else:
 		<tr>
 			<td class="left"><?php _e('Price', $this->localizationDomain); ?></td>
 			<td class="green"><b><?php _e('Free', $this->localizationDomain); ?></b></td>
-			<td class="green"><b>39 <?php _e('Euro', $this->localizationDomain); ?></b></td>
+			<td class="green"><b>79 <?php _e('Euro', $this->localizationDomain); ?></b></td>
 		</tr>
 	</table>
 

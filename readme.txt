@@ -54,9 +54,15 @@ server-side parameters described in section "conditions".
 
 == Changelog ==
 
+= 1.7.1 =
+Important bugfix release:
+- Fixed automatic deletion of configuration data when using Wordpress' plugin auto-upgrade function.
+- Fixed a Paypal error.
+- Fixed some typos.
+
 = 1.7 =
 - Bugfix in zoom mode.
-- Changed name to 3D Proukt Viewer.
+- Changed name to 3D Produkt Viewer.
 - New license system, Paypal integration.
 - Added language file for DE.
 

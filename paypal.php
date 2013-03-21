@@ -85,7 +85,7 @@ if(! isset($token) && ! isset($_GET['subaction'])) {
 			.'&PAYMENTREQUEST_0_AMT='.$totalAmount
 			.'&PAYMENTREQUEST_0_ALLOWNOTE=1'
 			.'&L_PAYMENTREQUEST_0_NAME0=3D Produkt Viewer PRO' // First item
-			.'&L_PAYMENTREQUEST_0_AMT0=32.77'
+			.'&L_PAYMENTREQUEST_0_AMT0='.$amountNet
 			.'&L_PAYMENTREQUEST_n_ITEMCATEGORYm=Digital'
 			.'&L_PAYMENTREQUEST_0_QTY0=1';
 
