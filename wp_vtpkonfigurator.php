@@ -4,7 +4,7 @@ Plugin Name: 3D Produkt Viewer
 Plugin URI: http://3d-produkt-viewer.eu/software/
 Description: Wordpress 3D Produkt Viewer
 Author: Visualtektur and ProNego
-Version: 1.7.2
+Version: 1.7.3
 Author URI: http://www.visualtektur.net/
 */
 
@@ -139,15 +139,15 @@ if (!class_exists('wp_vtpkonfigurator'))
 		 */
 		function install()
 		{
-			$sql = "CREATE TABLE IF NOT EXISTS `".$this->table_name. "` (
-				`v_id` int(12) unsigned NOT NULL AUTO_INCREMENT,
-				`v_name` varchar(255) COLLATE utf8_bin NOT NULL,
-				`v_options` varchar(255) COLLATE utf8_bin NOT NULL,
-				`v_rpm` varchar(255) COLLATE utf8_bin NOT NULL,
-				`v_configurationlabels` varchar(255) COLLATE utf8_bin NOT NULL,
-				PRIMARY KEY (`v_id`)
-				);
-				";
+			$sql = "CREATE TABLE ".$this->table_name. " (
+				v_id int(12) unsigned NOT NULL AUTO_INCREMENT,
+				v_name varchar(255) COLLATE utf8_bin NOT NULL,
+				v_options varchar(255) COLLATE utf8_bin NOT NULL,
+				v_rpm varchar(255) COLLATE utf8_bin NOT NULL,
+				v_configurationlabels varchar(255) COLLATE utf8_bin NOT NULL,
+				PRIMARY KEY  (v_id)
+				);";
+			
 			require_once(ABSPATH.'wp-admin/includes/upgrade.php');
 			dbDelta($sql);
 

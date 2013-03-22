@@ -1,7 +1,7 @@
 Kurzübersicht
 -------------
 
-Der 3D Proudkt Viewer für Wordpress ermöglicht die 3D-Anzeige von Produktkonfigurationen
+Der 3D Produkt Viewer für Wordpress ermöglicht die 3D-Anzeige von Produktkonfigurationen
 im Frontend. Gleichzeitig bietet er im Backend die Möglichkeit, die Konfigurationen
 anzulegen und die entsprechenden Bilder hochzuladen.
 
