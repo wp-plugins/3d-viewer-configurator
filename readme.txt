@@ -4,7 +4,7 @@ Donate link: http://3d-viewer-freeware.eu/freeware/plugin-fuer-wordpress.html
 Tags: 3d, viewer, configurator, eshop, products, 360
 Requires at least: 1.0
 Tested up to: 4.0
-Stable tag: 1.8
+Stable tag: 1.8.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -53,6 +53,9 @@ server-side parameters described in section "conditions".
 6. More screenshots are available on: http://3d-viewer-freeware.eu/installation/fuer-wordpress.html
 
 == Changelog ==
+
+= 1.8.1 =
+Fixed minor CSS bug.
 
 = 1.8 =
 Checked and established WP 4.0 compatibility, added icon to admin menu.
