@@ -468,7 +468,8 @@ if (!class_exists('wp_vtpkonfigurator'))
 		{
 			//add_options_page('WP-VTP Viewer', 'WP-VTP Viewer', 10, basename(__FILE__), array(&$this, 'admin_options_page'));
 			//add_filter('plugin_action_links_'.plugin_basename(__FILE__), array(&$this, 'filter_plugin_actions'), 10, 2);
-			add_menu_page('3D Produkt Viewer', '3D Produkt Viewer', 10, basename(__FILE__), array(&$this, 'admin_page'));
+			$icon = $this->plugin_url.'/img/visualtektur_16.png';
+			add_menu_page('3D Produkt Viewer', '3D Produkt Viewer', 10, basename(__FILE__), array(&$this, 'admin_page'), $icon);
 			add_filter('contextual_help', array(&$this, 'admin_help'), 10, 3);
 		}
 		
